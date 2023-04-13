@@ -1,6 +1,6 @@
 const { exec } = require('child_process');
 
-const executeNextjs = exec('./build-and-run.sh', {}, (error, _, stderr) => {
+const executeNextjs = exec('./build-and-run.sh', (error, _, stderr) => {
   if (error) {
     console.log(`error: ${error}`);
   }
